@@ -15,21 +15,21 @@
 #
 # input: IP Address
 # required: YES
-ssh_addr = 
+ssh_addr = IP_eth0
 
 # Port to listen for incoming SSH connections.
 #
 # input: Number
 # required: YES
 # default: 2222
-ssh_port = 2222
+ssh_port = SSH_eth0
 
 # IP addresses to send outgoing SSH connections.
 # 0.0.0.0 for all interfaces
 #
 # input: IP Address
 # required: YES
-client_addr = 
+client_addr = IP_eth1
 
 # Public and private SSH key files. 
 #
@@ -71,20 +71,20 @@ post-auth = true
 #
 # input: Text
 # required: YES
-sensor_name = 
+sensor_name = SENSOR_NAME
 
 # IP addresses of the honeypot.
 #
 # input: IP Address
 # required: YES
-honey_ip = 
+honey_ip = IP_HONEYPOT
 
 # SSH port of the honeypot.
 #
 # input: Number
 # required: YES
 # default: 22
-honey_port = 
+honey_port = 22
 
 #-----------------------#
 #   HONEYPOT SCRIPT     #
@@ -178,7 +178,7 @@ disable_sftp = false
 # input: true/false
 # required: YES
 # default: false
-disable_exec = false
+disable_exec = true
 
 # When enabled, HonSSH will block any attempts to start running port forwarding over SSH.
 # You can allow port forwarding but HonSSH will not log the session - Yet! (log to PCAP?)
@@ -224,7 +224,7 @@ session_path = sessions
 # input: true/false
 # required: YES
 # default: false
-enabled = false
+enabled = true
 
 #-----------------------#
 #    LIVE INTERACTION   #
@@ -298,7 +298,7 @@ users_conf = users.cfg
 # input: true/false
 # required: YES
 # default: false
-passive = false
+passive = true
 
 # HonSSH wil attempt to download all wget files to a local store.
 # 
@@ -310,7 +310,7 @@ passive = false
 # input: true/false
 # required: YES
 # default: false
-active = false
+active = true
 
 #-----------------------#
 #      TEXT LOGGING     #
@@ -588,4 +588,5 @@ enabled = false
 # required: YES
 # default: false
 enabled = false
+
 
