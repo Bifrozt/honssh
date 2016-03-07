@@ -15,7 +15,7 @@
 #
 # input: IP Address
 # required: YES
-ssh_addr = IP_eth0
+ssh_addr = 0.0.0.0
 
 # Port to listen for incoming SSH connections.
 #
@@ -29,7 +29,7 @@ ssh_port = 22
 #
 # input: IP Address
 # required: YES
-client_addr = IP_eth1
+client_addr = 192.168.27.1
 
 # Public and private SSH key files. 
 #
@@ -71,13 +71,13 @@ post-auth = true
 #
 # input: Text
 # required: YES
-sensor_name = SENSOR_NAME
+sensor_name = Bifrozt
 
 # IP addresses of the honeypot.
 #
 # input: IP Address
 # required: YES
-honey_ip = IP_HONEYPOT
+honey_ip = 192.168.27.200
 
 # SSH port of the honeypot.
 #
